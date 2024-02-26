@@ -1,6 +1,12 @@
 # Trading-Engine
-Trading engine that uses LOBSTER data messages
-The main goal with this project was to expose my self to how exchanges work and 
-how the messages are porcessed under the hood
+This trading Engine uses ITCH protocol for its messages that it recieves.
 
-I used lobster data becasue it uses NASDAQ ITCH protocol and the data is free to use
+Add - O(1)
+
+Execute - O(1)
+
+Cancel - O(n) where n is orders at that price level and side
+
+Match - O(1)
+
+Partial Cancel - O(n) where n is orders at that price level and side
